@@ -19,7 +19,6 @@ helm init --service-account tiller --wait
 kubectl patch deployment tiller-deploy --namespace=kube-system --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
 
 # Make io Hub faster, Create Optimized Storage Class
-# NOTE: I couldn't get this working, will try again later
 #kubectl apply -f storageclass.yaml
 
 ### Create & Run JupyterHub

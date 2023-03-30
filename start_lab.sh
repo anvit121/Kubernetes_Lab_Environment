@@ -11,7 +11,7 @@
 
 ### Download & Set Up Helm
 # https://zero-to-jupyterhub.readthedocs.io/en/latest/setup-helm.html
-curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
+curl https://raw.githubusercontent.com/helm/helm/HEAD/scripts/get-helm-3 | bash
 kubectl --namespace kube-system create serviceaccount tiller
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
 helm init --service-account tiller

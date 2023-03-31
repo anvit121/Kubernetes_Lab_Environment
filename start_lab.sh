@@ -14,8 +14,8 @@
 curl https://raw.githubusercontent.com/helm/helm/HEAD/scripts/get-helm-3 | bash
 kubectl --namespace kube-system create serviceaccount tiller
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
-helm init --service-account tiller
-helm init --service-account tiller --wait
+#helm init --service-account tiller
+#helm init --service-account tiller --wait
 kubectl patch deployment tiller-deploy --namespace=kube-system --type=json --patch='[{"op": "add", "path": "/spec/template/spec/containers/0/command", "value": ["/tiller", "--listen=localhost:44134"]}]'
 
 # Make io Hub faster, Create Optimized Storage Class

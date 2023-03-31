@@ -13,7 +13,7 @@ singleuser:
   lifecycleHooks:
     postStart:
       exec:
-        command: ["sh","-c","rm -rf welcome_to_lab && git clone https://github.com/anvit121/Kubernetes_Lab_Environment.git"]
+        command: ["sh","-c","rm -rf welcome_to_lab && git clone https://github.com/anvit121/welcome_to_lab.git"]
   # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-storage.html
   
 # https://zero-to-jupyterhub.readthedocs.io/en/latest/optimization.html

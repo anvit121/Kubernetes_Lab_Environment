@@ -7,7 +7,7 @@ proxy:
 singleuser:
   # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-environment.html
   image:
-    name: anvit121/Kubernetes_Lab_Environment
+    name: anvit121/kubernetes_Lab_Environment
     tag: latest
   # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-environment.html
   lifecycleHooks:

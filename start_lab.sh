@@ -31,7 +31,7 @@ helm repo add jupyterhub https://jupyterhub.github.io/helm-chart/
 helm repo update
 # Run the config.yaml file to start up JupyterHub: RELEASE=NAMESPACE=jhub, JUPYTER_VERSION=0.7.0
 # helm upgrade --cleanup-on-fail --install jhub jupyterhub/jupyterhub --namespace jhub --version=0.8.0 --values config.yaml
-helm upgrade --install jhub jupyterhub/jupyterhub --namespace jhub --version 0.8-ccc1e6b --values config.yaml
+helm upgrade --install jhub jupyterhub/jupyterhub --namespace jhub --version 0.7.0 --values config.yaml
 # helm upgrade --cleanup-on-fail \
 #   --install jhub jupyterhub/jupyterhub \
 #   --namespace jhub \
